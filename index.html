@@ -6,6 +6,7 @@
     <title>ToDesktop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
     <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <!-- NAV bar starts here -->
@@ -55,9 +56,46 @@
             </button>
         </div>
     </nav>
-    <!-- navbar ends here -->
-     <!-- hero section starts here -->
-    <!-- hero section ends here -->
+
+    <!-- main section starts here -->
+    <main>
+        <!-- hero section  -->
+         <div class="min-h-screen bg-gradient-to-br from-purple-100 via-orange-50 to-transparent" id="hero">
+            <div id="hero-container" class="max-w-4xl mx-auto px-6  pb-32 pt-6 sm:pt-8 flex flex-col gap-3 sm:items-center sm:text-center sm;px-12 ">
+                <div id="version-text" class="flex my-6 gap-2 items-center border border-yellow-300 bg-yellow-50 rounded-lg w-fit px-3 py-1 shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600 "></div>
+                    <p class="font-semibold font-display text-[#713f12]">
+                        <span class="font-semibold text-[#ca8a04]">v0.22.0:</span>
+                        Electron 30, Chromium 124, Node 20.11.1
+                    </p>
+                    <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition"></i>
+                </div>
+                <div id="hero-features" class="sm:flex hidden  gap-6">
+                    <div class="flex items-center gap-2 my-6">
+                        <i class="fa-regular fa-file text-gray-500 text-md"></i> 
+                        <p class="text-gray-500 font-display text-md">Code optional</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-hand-back-fist text-gray-500 text-md"></i> 
+                        <p class="text-gray-500 font-display text-md"> Drag & drop builder</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-laptop-file text-gray-500 text-md"></i> 
+                        <p class="text-gray-500 font-display text-md">Windows, Mac, Linux</p>
+                    </div>
+                    
+                </div>
+                <h1 class="font-semibold text-5xl md:text-6xl md:bold font-display">Web app to desktop app in minutes</h1>
+                <p class="font-body py-8 text-xl text-gray-600 leading-snug sm:2xl sm:leading-normal">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+                <div id="button-container " class="flex flex-col gap-3  sm:flex-row ">
+                    <button class="text-lg font-display font-bold bg-blue-700 py-3 rounded-lg text-white hover:bg-blue-600 md:px-6" >Download Now
+                    </button>
+                    <button class="text-lg font-display font-bold py-3 rounded-lg border-2 bg-white md:px-6">Read Docs</button>
+                </div>
+            </div>
+         </div>
+    </main>
+    <!-- main section ends here -->
 </body>
 <script src="script.js"></script>
 </html>
